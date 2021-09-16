@@ -56,20 +56,54 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 0.7rem auto;
   width: 95%;
   position: relative;
 }
+
 .card-header {
   height: 70px;
   background-color: rgb(78, 187, 199);
 }
+
+.card-body {
+  padding: 1rem;
+  border: solid 2px lightgray;
+}
+
+.card-content {
+  margin-top: 50px;
+}
+
+.header2 {
+  height: auto;
+  padding: 0.5rem;
+  background-color: rgb(57, 54, 54);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.user-dashboard {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: center;
+}
 /*--------------------------------USER DASHBOARD SECTION-------------------------------*/
 
 .profile-user-image img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
+
 .profile-user-image {
   border: solid 2px lightgray;
   border-radius: 50%;
@@ -79,17 +113,9 @@ body {
   background-color: white;
   overflow: hidden;
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 7%;
+  left: 7%;
   z-index: 1;
-}
-.card-content {
-  margin-top: 50px;
-}
-
-.card-body {
-  padding: 1rem;
-  border: solid 2px lightgray;
 }
 
 .icon {
@@ -109,29 +135,6 @@ body {
   align-items: center;
 }
 
-.header2 {
-  height: auto;
-  padding: 0.5rem;
-  background-color: rgb(57, 54, 54);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.user-container {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-.user-dashboard {
-  display: flex;
-  justify-content: center;
-}
-
-.connection-container {
-  width: 30%;
-}
 .number-container {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -153,6 +156,7 @@ body {
 
 .card-content-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
 }
@@ -168,14 +172,21 @@ p {
 
 /*-------------------------CONNECTION SECTION----------------------*/
 
+.connection-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
 .friends-img-container {
   overflow: hidden;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 .friends-img-container img {
   object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 .card-content-container p {
