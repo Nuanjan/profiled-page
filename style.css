@@ -11,13 +11,16 @@ body {
 
 /*------------------------------NAVBAR-------------------------------------*/
 .nav {
+  background-color: black;
+}
+.nav-container {
+  width: 77.5%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
-  background-color: rgb(57, 54, 54);
+  padding: 1rem;
   color: white;
 }
-
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -26,6 +29,7 @@ body {
   align-items: center;
 }
 .nav-links > li > a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: rgb(210, 208, 208);
 }
@@ -33,16 +37,22 @@ body {
 .nav-links > li > a.active {
   color: #ffff;
 }
+.title-nav-container {
+  display: flex;
+}
 .btn {
   background-color: rgb(21, 189, 215);
   padding: 3px 10px;
   color: white;
-  font-size: medium;
+  font-size: 0.8rem;
   border: 5px;
   box-shadow: 2px 2px 1px 4px rgb(0, 0, 0);
 }
+.nav-title {
+  margin-right: 1rem;
+}
+/*----------------------------------SHARE CONTAINER------------------------------------*/
 
-/*--------------------------------USER DASHBOARD BODY-------------------------------*/
 .card {
   display: flex;
   flex-direction: column;
@@ -54,6 +64,7 @@ body {
   height: 70px;
   background-color: rgb(78, 187, 199);
 }
+/*--------------------------------USER DASHBOARD SECTION-------------------------------*/
 
 .profile-user-image img {
   object-fit: contain;
@@ -108,16 +119,6 @@ body {
   align-items: center;
 }
 
-.friends-img-container {
-  overflow: hidden;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
-.friends-img-container img {
-  object-fit: cover;
-  width: 100%;
-}
 .user-container {
   display: flex;
   width: 50%;
@@ -146,33 +147,14 @@ body {
   padding-top: 0.3em;
 }
 
-.response-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 0.2em;
-}
-
 .textInfo {
   margin-right: 0.5em;
 }
 
-.response-icon-container {
-  display: flex;
-  flex-direction: flex-end;
-}
-
 .card-content-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-}
-
-.view-more-container {
-  border-top: none;
-}
-
-.view-more-container a {
-  color: rgb(45, 108, 226);
 }
 
 .education-text h3,
@@ -182,4 +164,32 @@ p {
 
 .education-text p#date {
   color: gray;
+}
+
+/*-------------------------CONNECTION SECTION----------------------*/
+
+.friends-img-container {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.friends-img-container img {
+  object-fit: cover;
+  width: 100%;
+}
+.card-content-container p {
+  margin-right: 2rem;
+}
+.view-more-container {
+  border-top: none;
+}
+
+.view-more-container a {
+  color: rgb(45, 108, 226);
+}
+.response-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.2em;
 }
