@@ -15,11 +15,11 @@ body {
   background-color: black;
 }
 .nav-container {
-  width: 77.5%;
+  width: 64%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: white;
 }
 .nav-links {
@@ -44,6 +44,7 @@ body {
 .btn {
   background-color: rgb(21, 189, 215);
   padding: 0 0.5rem;
+  margin: 0.5rem 0;
   color: white;
   font-size: 0.8rem;
   /* box-shadow: 2px 2px 1px 4px rgb(0, 0, 0); */
@@ -51,7 +52,8 @@ body {
 .nav-title {
   margin-right: 1rem;
 }
-/*----------------------------------SHARE CONTAINER------------------------------------*/
+
+/*----------------------------------SHARED PROPERTIES------------------------------------*/
 
 .card {
   display: flex;
@@ -59,11 +61,6 @@ body {
   margin: 0.7rem auto;
   width: 95%;
   position: relative;
-}
-
-.card-header {
-  height: 70px;
-  background-color: rgb(78, 187, 199);
 }
 
 .card-body {
@@ -75,20 +72,9 @@ body {
   margin-top: 50px;
 }
 
-.header2 {
-  height: auto;
-  padding: 0.5rem;
-  background-color: rgb(57, 54, 54);
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .user-container {
   display: flex;
-  width: 50%;
+  width: 40%;
   flex-direction: column;
 }
 
@@ -97,35 +83,36 @@ body {
   display: flex;
   justify-content: center;
 }
+
 /*--------------------------------USER DASHBOARD SECTION-------------------------------*/
 
-.profile-user-image img {
-  object-fit: cover;
-  width: 100%;
+.card-header {
+  height: 70px;
+  background-color: rgb(78, 187, 199);
 }
 
 .profile-user-image {
+  object-fit: cover;
   border: solid 2px lightgray;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  padding: 3px;
+  width: 80px;
+  height: 80px;
   background-color: white;
-  overflow: hidden;
   position: absolute;
-  top: 7%;
-  left: 7%;
+  top: 8%;
+  left: 8%;
   z-index: 1;
 }
 
 .icon {
   width: 10px;
   margin-right: 0.5rem;
-  margin-top: 0.5rem;
 }
+
 .text {
   margin-top: 0.5rem;
 }
+
 .icon-text-wrap a {
   color: rgb(45, 108, 226);
 }
@@ -139,8 +126,9 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   padding: 0.2em 0.6em;
-  margin-right: 0.3em;
+  margin: 0.2em 0.4em;
   color: black;
+  font-size: 0.6em;
 }
 
 .image-name-container {
@@ -151,7 +139,7 @@ body {
 }
 
 .textInfo {
-  margin-right: 0.5em;
+  margin-right: 0.4em;
 }
 
 .card-content-container {
@@ -159,12 +147,8 @@ body {
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
-  padding-top: 0.3em;
-}
-
-.education-text h3,
-p {
-  margin-bottom: 0.3em;
+  margin-top: 0.5rem;
+  max-width: 180px;
 }
 
 .education-text p#date {
@@ -172,18 +156,25 @@ p {
 }
 
 /*-------------------------CONNECTION SECTION----------------------*/
-
+.header2 {
+  height: auto;
+  padding: 0.2rem 0.8rem;
+  background-color: rgb(57, 54, 54);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .connection-container {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: column;
 }
 
 .friends-img-container {
-  overflow: hidden;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 20px;
+  width: 20px;
 }
 .friends-img-container img {
   object-fit: cover;
@@ -191,7 +182,7 @@ p {
   width: 100%;
 }
 .card-content-container p {
-  margin-right: 2rem;
+  flex: 1;
 }
 .view-more-container {
   border-top: none;
