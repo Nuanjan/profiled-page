@@ -31,7 +31,7 @@
                 <img class="profile-user-image" src="./images/noon.png" alt="profile Image">
                 <div class="card-body">
                     <div class="card-content">
-                        <h2>Noon Schluntz</h2>
+                        <h2 id="fullname">Noon Schluntz</h2>
                         <div class="icon-text-wrap"><span><img class="icon" src="./icons/map-marker.png"
                                     alt="location icon"></span>
                             Boston
@@ -39,7 +39,8 @@
                         <div class="text-margin-top">Software Engineer | Pug Lover</div>
                         <div>Animations for life!</div>
                         <div class="icon-text-wrap"><span><img class="icon" src="./icons/gear.png"
-                                    alt="gear icon"></span><a href="#">edit profile</a></div>
+                                    alt="gear icon"></span><a onclick="changeText(fullname)" href="#">edit profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,29 +58,33 @@
         <div class="connection-container">
             <div class="card">
                 <div class="header2">
-                    <p class="number-container">2</p>
+                    <p id="request-number" class="number-container">2</p>
                     <h4>Connection Requests</h4>
                 </div>
                 <div class="card-body">
-                    <div class="card-content-container">
+                    <div id="list1" class="card-content-container">
                         <img class="friends-img-container textInfo" src="./images/adrien-s.jpg" alt="profile Image">
                         <p>Adrien S</p>
-                        <img class="textInfo friends-img-container" src="./icons/accept-circle.png" alt="accepted icon">
-                        <img class="friends-img-container" src="./icons/close-circle.png" alt="declined icon">
+                        <img onclick="removeList(list1,accepted1)" id="accepted1" class="textInfo friends-img-container"
+                            src="./icons/accept-circle.png" alt="accepted icon">
+                        <img onclick="removeList(list1,declined1)" id="declined1" class="friends-img-container"
+                            src="./icons/close-circle.png" alt="declined icon">
                     </div>
-                    <div class="card-content-container">
+                    <div id="list2" class="card-content-container">
                         <img class="textInfo friends-img-container" src="./images/alayne-s.jpg" alt="profile Image">
                         <p>Alayne S</p>
-                        <img class="textInfo friends-img-container response-icon" src="./icons/accept-circle.png"
+                        <img onclick="removeList(list2, accepted2)" id="accepted2"
+                            class="textInfo friends-img-container response-icon" src="./icons/accept-circle.png"
                             alt="accepted icon">
-                        <img class="friends-img-container response-icon" src="./icons/close-circle.png"
+                        <img onclick="removeList(list2, declined2)" id="declined2"
+                            class="friends-img-container response-icon" src="./icons/close-circle.png"
                             alt="declined icon">
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="header2">
-                    <p class="number-container">500+</p>
+                    <p id="connected-number" class="number-container">500+</p>
                     <h4>Your Connections</h4>
                 </div>
                 <div class="card-body">
@@ -100,6 +105,7 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

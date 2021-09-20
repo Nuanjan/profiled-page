@@ -56,8 +56,6 @@ body {
 /*----------------------------------SHARED PROPERTIES------------------------------------*/
 
 .card {
-  display: flex;
-  flex-direction: column;
   margin: 0.7rem auto;
   width: 95%;
   position: relative;
@@ -190,4 +188,8 @@ body {
 
 .view-more-container a {
   color: rgb(45, 108, 226);
+}
+
+.display-none {
+  display: none;
 }
